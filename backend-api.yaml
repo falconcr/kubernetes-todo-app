@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: database-api
 spec:
+  replicas: 2
   selector:
     matchLabels:
       name: database-api
